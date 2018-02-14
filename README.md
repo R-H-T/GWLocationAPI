@@ -59,25 +59,25 @@ While you're inside your project's directory, type the following (Mac/Linux/W
 
 ## Testing through `cURL`
 
-### GET INDEX
+#### GET INDEX
 `curl "https://gw-location-api.herokuapp.com"`
 
-### FIND LOCATION
+#### FIND LOCATION
 `curl "https://gw-location-api.herokuapp.com/find/bangkok"`
 
-###  GET ALL LOCATIONS
+####  GET ALL LOCATIONS
 `curl "https://gw-location-api.herokuapp.com/locations/"`
 
-###  LOCATION BY ID
+####  LOCATION BY ID
 `curl "https://gw-location-api.herokuapp.com/locations/1"`
 
-###  POST LOCATION (🔐)
+####  POST LOCATION (🔐)
 `curl -i -X "POST" "https://gw-location-api.herokuapp.com/locations/"`
 
-###  UPDATE LOCATION (🔐)
+####  UPDATE LOCATION (🔐)
 `curl -i -X "PUT" "https://gw-location-api.herokuapp.com/locations/1"`
 
-###  DELETE LOCATION (🔐)
+####  DELETE LOCATION (🔐)
 `curl -i -X "DELETE" "https://gw-location-api.herokuapp.com/locations/1"`
 
 🔐 = Requires authentication (_Create a user inside the generated db-file until added in future versions_).
