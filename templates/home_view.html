@@ -1,0 +1,7 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1>{{ values.title }}</h1>
+{% if values.content %}
+    <p>{{ values.content | safe }}</p>
+{% endif %}
+{% endblock %}
