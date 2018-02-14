@@ -50,4 +50,4 @@ https://gw-location-api.herokuapp.com
 
 ## License
 
-Copyright ©2018 – Roberth Hansson-Tornéus (R-H-T)[https://github.com/R-H-T]
+Copyright ©2018 – Roberth Hansson-Tornéus [R-H-T](https://github.com/R-H-T)
