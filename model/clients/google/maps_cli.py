@@ -11,8 +11,8 @@ import codecs
 
 from config import GoogleMapsAPIKeys
 
-sys.stdout = codecs.getwriter('utf8')(sys.stdout)
-sys.stderr = codecs.getreader('utf8')(sys.stderr)
+stdout = codecs.getwriter('utf8')(sys.stdout)
+stderr = codecs.getreader('utf8')(sys.stderr)
 
 
 # Methods
