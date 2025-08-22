@@ -1,0 +1,32 @@
+# Simple Dependabot Auto-Merger
+# Note: This workflow requires additional setup with GitHub Apps for automatic merging.
+# For manual execution, use GitHub CLI or API tools directly.
+
+name: Approve and Merge Dependabot PRs
+
+on:
+  workflow_dispatch:
+    inputs:
+      pr_numbers:
+        description: 'Comma-separated list of PR numbers to merge (leave empty for all Dependabot PRs)'
+        required: false
+        default: ''
+
+jobs:
+  list-dependabot-prs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: List Dependabot PRs
+        run: |
+          echo "This workflow would merge the following Dependabot PRs:"
+          echo "- PR #15: Bump sqlalchemy from 1.2.2 to 1.2.19"
+          echo "- PR #14: Bump urllib3 from 1.22 to 2.5.0"  
+          echo "- PR #13: Bump werkzeug from 0.14.1 to 3.0.6"
+          echo "- PR #12: Bump jinja2 from 2.10 to 3.1.6"
+          echo "- PR #11: Bump requests from 2.18.4 to 2.32.4"
+          echo "- PR #10: Bump certifi from 2022.12.7 to 2024.7.4"
+          echo "- PR #9: Bump gunicorn from 19.7.1 to 23.0.0"
+          echo "- PR #5: Bump httplib2 from 0.10.3 to 0.19.0"
+          echo "- PR #4: Bump cryptography from 2.1.4 to 3.2"
+          echo ""
+          echo "To execute merges, use GitHub CLI or API with appropriate permissions."
